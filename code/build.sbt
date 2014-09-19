@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
 , ivy
 , logback
 , PropsLoader.Core
-, "com.instantor.commons" %% "common" % "0.0.3"
+, Commons.plugin
 )
 
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.7.4")
