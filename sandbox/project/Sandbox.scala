@@ -15,7 +15,7 @@ object Sandbox extends Build with Default {
   , file("Proj1")
   , settings = defaultSettings
   )
-  
+
   lazy val proj2 = Project(
     "Sandbox-Proj2"
   , file("Proj2")

@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
 , ivy
 , logback
 , PropsLoader.Core
-, InstantorCommons
+, Instantor.Commons
 )
 
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.7.4")

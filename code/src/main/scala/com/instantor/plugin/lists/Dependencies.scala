@@ -34,7 +34,7 @@ trait Dependencies {
 
   val doitCsv = "hr.element.doit" %% "doit-csv" % "0.1.7"
 
-  val dslClientHttp = "com.dslplatform" % "dsl-client-http-apache" % "0.4.15"
+  val dslClientJava = "com.dslplatform" % "dsl-client-java" % "1.0.2-1"
 
   val etbUtil = "hr.element.etb" %% "etb-util" % "0.2.20"
   val etbLift = "hr.element.etb" %% "etb-lift" % "0.1.5"
@@ -88,8 +88,10 @@ trait Dependencies {
   val scalaIoFile = "com.github.scala-incubator.io" %% "scala-io-file" % "0.4.3"
 
   val scalaTime = "com.github.nscala-time" %% "nscala-time" % "1.4.0"
+  val scalaPasswordHash = "com.github.dholbrook" %% "scala-password-hash" % "1.0"
   val scalaTransliteration = "hr.element.etb" %% "scala-transliteration" % "0.0.1"
   val scalaUUID = "io.jvm" %% "scala-uuid" % "0.1.3"
+
   val scalaXml = "org.scala-lang.modules" %% "scala-xml" % "1.0.2"
 
   val scalaz  = "org.scalaz" %% "scalaz-core" % "6.0.4"
@@ -100,8 +102,9 @@ trait Dependencies {
   val seleniumFirefox = "org.seleniumhq.selenium" % "selenium-firefox-driver" % "2.42.2"
   val seleniumServer  = "org.seleniumhq.selenium" % "selenium-server"         % "2.42.2"
 
-  val sprayCan       = "io.spray" %% "spray-can"     % "1.3.1"
-  val sprayRouting   = "io.spray" %% "spray-routing" % "1.3.1"
+  val sprayCan     = "io.spray" %% "spray-can"     % "1.3.1"
+  val sprayRouting = "io.spray" %% "spray-routing" % "1.3.1"
+  val sprayCaching = "io.spray" %% "spray-caching" % "1.3.1"
 
   val spyMemcached = "net.spy" % "spymemcached" % "2.11.4"
 
@@ -109,7 +112,7 @@ trait Dependencies {
 
   val tagSoup = "org.ccil.cowan.tagsoup" % "tagsoup" % "1.2.1"
 
-  val templater = "hr.ngs.templater" %% "templater" % "1.9.4"
+  val templater = "hr.ngs.templater" %% "templater" % "1.9.5-1"
 
   val xstream   = "com.thoughtworks.xstream" % "xstream" % "1.4.7"
 
@@ -136,7 +139,7 @@ trait Dependencies {
   val junit          = "junit"        % "junit"           % "4.11" % "test"
   val junitInterface = "com.novocode" % "junit-interface" % "0.11" % "test"
 
-  val scalaTest = "org.scalatest" %% "scalatest" % "2.2.1" % "test"
+  val scalaTest = "org.scalatest" %% "scalatest" % "2.2.2" % "test"
 
   val xmlUnit = "xmlunit" % "xmlunit" % "1.5" % "test"
 }

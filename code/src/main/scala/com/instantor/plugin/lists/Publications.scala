@@ -4,9 +4,14 @@ package lists
 import sbt._
 
 trait Publications {
-  val InstantorApi = "com.instantor" % "instantor-api" % "0.4.1"
+  @deprecated("Use Instantor.Api instead", "0.3.53")
+  def InstantorApi = Instantor.Api;
 
-  val InstantorCommons = "com.instantor.commons" %% "instantorcommons" % "0.0.3"
+  object Instantor {
+    val Api =  "com.instantor" % "instantor-api" % "0.4.1"
+
+    val Commons = "com.instantor.commons" %% "instantorcommons" % "0.0.3"
+  }
 
   object PropsLoader {
     val Api  = "com.instantor.props" % "propsloader-api"  % "0.3.18"
