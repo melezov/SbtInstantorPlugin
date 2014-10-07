@@ -14,6 +14,7 @@ trait Dependencies {
 
   val bouncyCastleMail     = "org.bouncycastle" % "bcmail-jdk15on" % "1.51"
   val bouncyCastleProvider = "org.bouncycastle" % "bcprov-jdk15on" % "1.51"
+  val bouncyCastlecPGP     = "org.bouncycastle" % "bcpg-jdk15on"   % "1.51"
 
   val commonsCodec        = "commons-codec"       % "commons-codec"        % "1.9"
   val commonsCollections  = "commons-collections" % "commons-collections"  % "3.2.1"
@@ -34,7 +35,9 @@ trait Dependencies {
 
   val doitCsv = "hr.element.doit" %% "doit-csv" % "0.1.7"
 
-  val dslClientJava = "com.dslplatform" % "dsl-client-java" % "1.0.2-1"
+  val doj       = "hr.element.doj" %% "doj-client" % "1.0.1"
+
+  val dslClientJava = "com.dslplatform" % "dsl-client-java" % "1.0.3"
 
   val etbUtil = "hr.element.etb" %% "etb-util" % "0.2.20"
   val etbLift = "hr.element.etb" %% "etb-lift" % "0.1.5"
@@ -49,7 +52,7 @@ trait Dependencies {
 
   val ivy = "org.apache.ivy" % "ivy" % "2.4.0-rc1"
 
-  val jodaTime    = "joda-time" % "joda-time"    % "2.4"
+  val jodaTime    = "joda-time" % "joda-time"    % "2.5"
   val jodaConvert = "org.joda"  % "joda-convert" % "1.7"
 
   val jsch = "com.jcraft" % "jsch" % "0.1.51"
