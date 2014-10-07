@@ -8,9 +8,13 @@ trait Publications {
   def InstantorApi = Instantor.Api;
 
   object Instantor {
-    val Api =  "com.instantor" % "instantor-api" % "0.4.1"
-
+    val Api =  "com.instantor" % "instantor-api" % "0.4.3"
     val Commons = "com.instantor.commons" %% "instantorcommons" % "0.0.3"
+  }
+
+  object Sandbox {
+    val NameCompare = "com.instantor.ip.sandbox" %% "ip-namecompare-core" % "0.1.4"
+    val Search = "com.instantor.ip.sandbox" %% "ip-search-core" % "2.0.0"
   }
 
   object PropsLoader {
