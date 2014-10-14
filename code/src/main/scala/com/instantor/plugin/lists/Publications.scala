@@ -23,9 +23,9 @@ trait Publications {
   }
 
   object TotaLog {
-    val Interfaces = "com.instantor.totalog" % "totalog-interfaces" % "0.5.6"
-    val Transport  = "com.instantor.totalog" % "totalog-transport"  % "0.5.6"
-    val Search     = "com.instantor.totalog" % "totalog-search"     % "0.5.6"
+    val Interfaces = "com.instantor.totalog" % "totalog-interfaces" % "0.6.0"
+    val Transport  = "com.instantor.totalog" % "totalog-transport"  % "0.6.0"
+    val Search     = "com.instantor.totalog" % "totalog-search"     % "0.6.0"
   }
 
   object BspClientApi {
