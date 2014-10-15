@@ -127,7 +127,7 @@ trait Dependencies {
 
   val logback = "ch.qos.logback" % "logback-classic" % "1.1.2"
 
-  val scalaLogging = "com.typesafe.scala-logging" %% "scala-logging-slf4j" % "2.1.2"
+  val scalaLogging = "com.typesafe.scala-logging" %% "scala-logging" % "3.1.0"
 
   val slf4jApi       = "org.slf4j" % "slf4j-api"        % "1.7.7"
   val log4jOverSlf4j = "org.slf4j" % "log4j-over-slf4j" % "1.7.7"
