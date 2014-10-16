@@ -39,9 +39,9 @@ trait Dependencies {
 
   val dslClientJava = "com.dslplatform" % "dsl-client-java" % "1.0.3"
 
-  val etbUtil = "hr.element.etb" %% "etb-util" % "0.2.20"
-  val etbLift = "hr.element.etb" %% "etb-lift" % "0.1.5"
-  val etbImg  = "hr.element.etb" %% "etb-img"  % "0.2.1"
+  val etbUtil = "hr.element.etb" %% "etb-util" % "0.2.22"
+  val etbLift = "hr.element.etb" %% "etb-lift" % "0.1.7"
+  val etbImg  = "hr.element.etb" %% "etb-img"  % "0.2.3"
 
   val iorc = "org.pgscala" %% "pgscala-iorc" % "0.1.9"
 
