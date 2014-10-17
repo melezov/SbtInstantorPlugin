@@ -20,7 +20,7 @@ object IvyRevisionResolver {
 
     val resolveReport = ivy.resolve(moduleDescriptor, resolveOptions)
     if (resolveReport.hasError) {
-        throw new RuntimeException(resolveReport.getAllProblemMessages.toString)
+      throw new RuntimeException(resolveReport.getAllProblemMessages.toString)
     }
 
     resolveReport

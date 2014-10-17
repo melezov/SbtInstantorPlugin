@@ -41,10 +41,10 @@ object InstantorPlugin
   // ---------------------------------------------------------------------------
 
   lazy val privateRelease =
-    publishTo := Some(if(isSnapshot.value) InstantorPrivateSnapshots else InstantorPrivateReleases)
+    publishTo := Some(if (isSnapshot.value) InstantorPrivateSnapshots else InstantorPrivateReleases)
 
   lazy val publicRelease =
-    publishTo := Some(if(isSnapshot.value) InstantorSnapshots else InstantorReleases)
+    publishTo := Some(if (isSnapshot.value) InstantorSnapshots else InstantorReleases)
 
   lazy val publishingSettings: Seq[Setting[_]] = Seq(
     privateRelease

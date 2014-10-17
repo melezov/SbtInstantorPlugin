@@ -13,8 +13,8 @@ object SbtLoggerWrapper {
     args match {
       case Nil => message
       case head :: tail =>
-          val replacement = Matcher.quoteReplacement(head.toString)
-          toMessage(message.replaceFirst(R, replacement), tail)
+        val replacement = Matcher.quoteReplacement(head.toString)
+        toMessage(message.replaceFirst(R, replacement), tail)
     }
   }
 
@@ -39,13 +39,13 @@ class SbtLoggerWrapper(protected val log: SbtLogger)
   override def error(msg: String, arg1: Any, arg2: Any) = log error toMessage(msg, List(arg1, arg2))
   override def error(msg: String, t: Throwable)         = log error toMessageWithCause(msg, t)
 
-  def warn (msg: String, args: Object*) = log warn toMessage(msg, args.toList)
+  def warn(msg: String, args: Object*) = log warn toMessage(msg, args.toList)
   override def warn(msg: String)                        = log warn msg
   override def warn(msg: String, arg1: Any)             = log warn toMessage(msg, List(arg1))
   override def warn(msg: String, arg1: Any, arg2: Any)  = log warn toMessage(msg, List(arg1, arg2))
   override def warn(msg: String, t: Throwable)          = log warn toMessageWithCause(msg, t)
 
-  def info (msg: String, args: Object*) = log info toMessage(msg, args.toList)
+  def info(msg: String, args: Object*) = log info toMessage(msg, args.toList)
   override def info(msg: String)                        = log info msg
   override def info(msg: String, arg1: Any)             = log info toMessage(msg, List(arg1))
   override def info(msg: String, arg1: Any, arg2: Any)  = log info toMessage(msg, List(arg1, arg2))
