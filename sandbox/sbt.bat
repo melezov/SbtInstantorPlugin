@@ -1,10 +1,10 @@
 @echo off
 setlocal enabledelayedexpansion 
 
-pushd %~dp0
+pushd "%~dp0"
 call :load_branches
 
-java %branches% -Xss2m -Xms2g -Xmx2g -jar project\strap\gruj_vs_sbt-launch-0.13.x.jar %*
+java %branches% -Dinput.encoding=Cp1252 -Xss2m -Xms2g -Xmx2g -jar project\strap\gruj_vs_sbt-launch-0.13.x.jar %*
 
 popd 
 endlocal
@@ -22,7 +22,7 @@ set OLD_DIR=%CD%\
 call :push_descend
 for %%a in ("%CD%\*.branch") do (
   set /p current=<"%%~fa"
-  echo Found %%~fa = !current!
+  echo Found %%~fa := !current!
   set branches=!branches! -D%%~nxa="!current!"
 ) 
 goto :EOF
