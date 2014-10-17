@@ -51,7 +51,7 @@ object Sandbox extends Build with Default {
       , iorc
       , itext
       , ivy
-      , jettyContainer
+//      , jettyContainer
       , jodaConvert
       , jodaTime
       , jsch
