@@ -1,5 +1,5 @@
 @echo off
-setlocal enabledelayedexpansion 
+setlocal enabledelayedexpansion
 
 pushd "%~dp0"
 call :load_branches

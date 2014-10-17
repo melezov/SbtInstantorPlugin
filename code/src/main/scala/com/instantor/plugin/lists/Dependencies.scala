@@ -47,8 +47,8 @@ trait Dependencies {
 
   val itext = "com.itextpdf" % "itextpdf" % "5.5.1"
 
-  val jetty   = "org.eclipse.jetty" % "jetty-webapp"      % "9.2.2.v20140723" % "container"
-  val servlet = "javax.servlet"     % "javax.servlet-api" % "3.0.1"           % "provided"
+  val jettyContainer = "org.eclipse.jetty" % "jetty-webapp"      % "9.2.3.v20140905" % "container"
+  val servlet        = "javax.servlet"     % "javax.servlet-api" % "3.0.1"           % "provided"
 
   val ivy = "org.apache.ivy" % "ivy" % "2.4.0-rc1"
 
