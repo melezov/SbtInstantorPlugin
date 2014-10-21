@@ -9,12 +9,25 @@ trait Publications {
   }
 
   object ClientInfo {
-    val JApi = "com.instantor.clientinfo" % "clientinfo-japi" % "0.4.1"
+    val JApi     = "com.instantor.clientinfo" %  "clientinfo-japi"     % "0.4.1"
     val Extended = "com.instantor.clientinfo" %% "clientinfo-extended" % "0.4.1"
   }
 
+  object Consolidator {
+    val Model = "com.instantor.bsp" % "bspdsapi-consolidator" % "0.5.0"
+  }
+
+  object Api {
+    val Shared  = "com.instantor.bsp" % "bspdsapi-apishared" % "0.5.0"
+  }
+
+  object Transport {
+    val Common = "com.instantor.bsp" % "bspdsapi-transportcommon" % "0.5.0"
+  }
+
   object Instantor {
-    val Api =  "com.instantor" % "instantor-api" % "0.4.3"
+    val Api     = "com.instantor" % "instantor-api" % "0.4.3"
+
     val Commons = "com.instantor.commons" %% "instantorcommons" % "0.0.3"
   }
 
@@ -25,7 +38,7 @@ trait Publications {
 
   object Sandbox {
     val NameCompare = "com.instantor.ip.sandbox" %% "ip-namecompare-core" % "0.1.4"
-    val Search = "com.instantor.ip.sandbox" %% "ip-search-core" % "2.0.0"
+    val Search      = "com.instantor.ip.sandbox" %% "ip-search-core"      % "2.0.0"
   }
 
   object TotaLog {
