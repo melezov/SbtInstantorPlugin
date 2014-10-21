@@ -85,7 +85,7 @@ trait Dependencies {
 
   val pgscalaLegacy = "hr.element.pgscala" %% "pgscala-pool-legacy" % "0.1.7-2"
 
-  val randata = "net.randata" %% "randata-java" % "0.0.5-SNAPSHOT"
+  val randata = "net.randata" %% "randata-java" % "0.0.6"
 
   val rhino = "org.mozilla" % "rhino" % "1.7R4"
 
