@@ -73,6 +73,7 @@ object Sandbox extends Build with Default {
       , pgscalaLegacy
       , picoContainer
       , postgres
+      , randata
       , rhino
       , scalaIoCore
       , scalaIoFile
@@ -120,22 +121,22 @@ object Sandbox extends Build with Default {
       libraryDependencies ++= Seq(
         BspClientApi.Model
       , BspCommon.Commons
-      , BspCommon.Bases  
+      , BspCommon.Bases
       , BspOtpProvider.ClientJava
-      , ClientInfo.JApi    
+      , ClientInfo.JApi
       , ClientInfo.Extended
       , Consolidator.Model
-      , Api.Shared 
+      , Api.Shared
       , Transport.Common
-      , Instantor.Api    
+      , Instantor.Api
       , Instantor.Commons
-      , PropsLoader.Api 
+      , PropsLoader.Api
       , PropsLoader.Core
       , _Sandbox.NameCompare
-      , _Sandbox.Search     
+      , _Sandbox.Search
       , TotaLog.Interfaces
-      , TotaLog.Transport 
-      , TotaLog.Search    
+      , TotaLog.Transport
+      , TotaLog.Search
       )
     )
   )
