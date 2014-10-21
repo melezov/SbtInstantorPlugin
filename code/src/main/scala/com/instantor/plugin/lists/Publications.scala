@@ -14,7 +14,7 @@ trait Publications {
   }
 
   object BspOtpProvider {
-    val ClientJava = "com.instantor.bsp.otp" % "bspotpprovider-client-java" % "0.4.14"
+    val ClientJava = "com.instantor.bsp.otp" % "bspotpprovider-client-java" % "0.4.15"
   }
 
   object ClientInfo {

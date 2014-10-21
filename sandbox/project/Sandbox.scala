@@ -119,17 +119,23 @@ object Sandbox extends Build with Default {
   , settings = defaultSettings ++ Seq(
       libraryDependencies ++= Seq(
         BspClientApi.Model
-      , ClientInfo.JApi
+      , BspCommon.Commons
+      , BspCommon.Bases  
+      , BspOtpProvider.ClientJava
+      , ClientInfo.JApi    
       , ClientInfo.Extended
-      , Instantor.Api
+      , Consolidator.Model
+      , Api.Shared 
+      , Transport.Common
+      , Instantor.Api    
       , Instantor.Commons
-      , PropsLoader.Api
+      , PropsLoader.Api 
       , PropsLoader.Core
       , _Sandbox.NameCompare
-      , _Sandbox.Search
+      , _Sandbox.Search     
       , TotaLog.Interfaces
-      , TotaLog.Transport
-      , TotaLog.Search
+      , TotaLog.Transport 
+      , TotaLog.Search    
       )
     )
   )
