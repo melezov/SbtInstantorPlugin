@@ -80,10 +80,12 @@ trait Dependencies {
 
   val picoContainer = "org.picocontainer" % "picocontainer" % "3.0.a3" classifier "ngs"
 
-  val postgres = "org.postgresql" %  "postgresql"   % "9.3-1102-jdbc41"
-  val pgscala  = "org.pgscala"    %% "pgscala"      % "0.7.29"
+  val postgres = "org.postgresql" %  "postgresql" % "9.3-1102-jdbc41"
+  val pgscala  = "org.pgscala"    %% "pgscala"    % "0.7.29"
 
   val pgscalaLegacy = "hr.element.pgscala" %% "pgscala-pool-legacy" % "0.1.7-2"
+
+  val randata = "net.randata" %% "randata-java" % "0.0.5-SNAPSHOT"
 
   val rhino = "org.mozilla" % "rhino" % "1.7R4"
 

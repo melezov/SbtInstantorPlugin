@@ -8,6 +8,15 @@ trait Publications {
     val Model = "com.instantor.bsp" % "bspclientapi-model" % "0.2.0"
   }
 
+  object BspCommon {
+    val Commons = "com.instantor.bsp" % "bspcommon-commons" % "0.9.0"
+    val Bases   = "com.instantor.bsp" % "bspcommon-bases"   % "0.9.0"
+  }
+
+  object BspOtpProvider {
+    val ClientJava = "com.instantor.bsp.otp" % "bspotpprovider-client-java" % "0.4.14"
+  }
+
   object ClientInfo {
     val JApi     = "com.instantor.clientinfo" %  "clientinfo-japi"     % "0.4.1"
     val Extended = "com.instantor.clientinfo" %% "clientinfo-extended" % "0.4.1"
