@@ -127,6 +127,8 @@ object Sandbox extends Build with Default {
       , ClientInfo.Extended
       , ClientInfo.JApi
       , Consolidator.Model
+      , EDS.ModelInterfaces
+      , EDS.ModelServices
       , Instantor.Api
       , Instantor.Commons
       , PropsLoader.Api
