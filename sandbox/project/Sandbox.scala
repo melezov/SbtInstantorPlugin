@@ -119,15 +119,14 @@ object Sandbox extends Build with Default {
   , file("Proj2")
   , settings = defaultSettings ++ Seq(
       libraryDependencies ++= Seq(
-        BspClientApi.Model
-      , BspCommon.Commons
+        Api.Shared
+      , BspClientApi.Model
       , BspCommon.Bases
+      , BspCommon.Commons
       , BspOtpProvider.ClientJava
-      , ClientInfo.JApi
       , ClientInfo.Extended
+      , ClientInfo.JApi
       , Consolidator.Model
-      , Api.Shared
-      , Transport.Common
       , Instantor.Api
       , Instantor.Commons
       , PropsLoader.Api
@@ -135,8 +134,9 @@ object Sandbox extends Build with Default {
       , _Sandbox.NameCompare
       , _Sandbox.Search
       , TotaLog.Interfaces
-      , TotaLog.Transport
       , TotaLog.Search
+      , TotaLog.Transport
+      , Transport.Common
       )
     )
   )

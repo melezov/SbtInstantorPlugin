@@ -4,6 +4,10 @@ package lists
 import sbt._
 
 trait Publications {
+  object Api {
+    val Shared  = "com.instantor.bsp" % "bspdsapi-apishared" % "0.5.0"
+  }
+
   object BspClientApi {
     val Model = "com.instantor.bsp" % "bspclientapi-model" % "0.2.0"
   }
@@ -26,12 +30,9 @@ trait Publications {
     val Model = "com.instantor.bsp" % "bspdsapi-consolidator" % "0.5.0"
   }
 
-  object Api {
-    val Shared  = "com.instantor.bsp" % "bspdsapi-apishared" % "0.5.0"
-  }
-
-  object Transport {
-    val Common = "com.instantor.bsp" % "bspdsapi-transportcommon" % "0.5.0"
+  object EDS {
+    val ModelInterfaces = "com.instantor.eds" %% "eds-model-interfaces" % "0.12.0"
+    val ModelServices   = "com.instantor.eds" %% "eds-model-services"   % "0.12.0"
   }
 
   object Instantor {
@@ -54,5 +55,9 @@ trait Publications {
     val Interfaces = "com.instantor.totalog" % "totalog-interfaces" % "0.6.0"
     val Transport  = "com.instantor.totalog" % "totalog-transport"  % "0.6.0"
     val Search     = "com.instantor.totalog" % "totalog-search"     % "0.6.0"
+  }
+
+  object Transport {
+    val Common = "com.instantor.bsp" % "bspdsapi-transportcommon" % "0.5.0"
   }
 }
